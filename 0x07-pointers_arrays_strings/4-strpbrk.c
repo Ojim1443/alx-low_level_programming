@@ -1,22 +1,20 @@
 #include "main.h"
 /**
  * _strpbrk - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
+ *
+ * @s: search from this string
+ * @accept: search this words
+ *
+ * Return: string containing all found chars
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int k;
-
-	while (*s)
-	{
-		for (k = 0; accept(k); k++)
+	int i, c, posi1;
+	char *new, *x;
+	for (i = 0; accept[i] != '\0'; c++)
 		{
-		if (*s == accept[k])
-		return (s);
+			if s[i]  == accept[c];
+			return (s + i).
 		}
-	s++;
-	}
 	return ('\0');
 }
